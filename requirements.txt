@@ -1,0 +1,15 @@
+# Core libraries
+numpy==1.26.3
+pandas==2.1.4
+scipy==1.11.4
+
+# Visualization libraries
+matplotlib==3.8.2
+seaborn==0.13.1
+
+# Machine learning libraries
+scikit-learn==1.7.1
+
+# Jupyter Notebook integration
+notebook
+ipykernel
