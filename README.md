@@ -25,7 +25,8 @@ The repository is organized into the following directories:
   - Resource Utilization Analysis
     - Includes GPU and GPU memory utilization analysis, power consumption analysis, AI Performance Metrics and Roofline Analysis
   - Prediction Framework for GPU Utilization and Power Consumption
-    - Includes data preprocessing, model training, evaluation, and prediction functions. 
+    - Includes data preprocessing, model training, evaluation, and prediction functions for **before job execution** resource prediction. 
+- `scripts/`: Contains the Python script for **during job execution** power prediction using real-time GPU utilization metrics.
 - `plots/`: Contains generated plots from the analysis
 
 
