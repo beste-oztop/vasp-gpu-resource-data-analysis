@@ -1,4 +1,4 @@
-# vasp-gpu-resource-data-analysis
+# Resource Utilization Analysis and Prediction of VASP GPU Jobs Running on Perlmutter
 This is the repository for Resource Utilization Analysis on GPU Jobs Running on Perlmutter, with a specific focus on VASP (Vienna Ab initio Simulation Package) jobs from March 2025.
 
 ## Overview
