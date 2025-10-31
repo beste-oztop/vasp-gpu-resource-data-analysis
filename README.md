@@ -2,17 +2,17 @@
 This is the repository for Resource Utilization Analysis on GPU Jobs Running on Perlmutter, with a specific focus on VASP (Vienna Ab initio Simulation Package) jobs from March 2025.
 
 ## Overview
-This analysis contains various scripts and functions to analyze GPU resource utilization, focusing on VASP jobs. The analysis includes plotting functions, data processing, and performance metrics. We also provide insights into AI performance metrics and roofline analysis. 
+This analysis contains various scripts and functions to analyze GPU resource utilization, as well as power consumption of VASP GPU jobs. The analysis includes plotting functions, data processing, and performance metrics. We provide insights into AI performance metrics and roofline analysis. We also provide a prediction framework for maximum GPU and GPU memory utilization, and the average power consumption of VASP GPU jobs using their job submission parameters.
 
 ## Dataset Characteristics
-We limit our analysis to VASP jobs that ran on regular and premimum GPU nodes on Perlmutter from MArch 2025.
+We limit our analysis to VASP jobs that ran on regular and premimum GPU nodes on Perlmutter from March 2025. Using our analysis and prediction methods, one can extend our findings to other GPU applications and workloads.
 
-The dataset includes:
-- GPU utilization metrics from NVIDIA Data Center Management Tool (DCGM)
-- Accounting job data for GPU jobs from Slurm
+Our dataset includes:
+- Accounting job data for GPU jobs from Slurm, and,
+- GPU utilization metrics from NVIDIA Data Center Management Tool (DCGM).
 
-Total number of VASP jobs included in this analysis: 32322
-Utilization statistics:
+The total number of VASP jobs included in this analysis is **32322**.
+Resource utilization statistics overview:
 - Memory range: 229902 - 34485300 MB
 - GPU range: 4 - 600 GPUs
 - Node range: 1 - 150 nodes
@@ -21,9 +21,12 @@ Utilization statistics:
 
 ## Organization
 The repository is organized into the following directories:
-- `dcgm_slurm_studies/`: Contains scripts for plotting and analyzing GPU utilization data
+- `notebooks/`: Contains the following Jupyter notebooks:
+  - Resource Utilization Analysis
+    - Includes GPU and GPU memory utilization analysis, power consumption analysis, AI Performance Metrics and Roofline Analysis
+  - Prediction Framework for GPU Utilization and Power Consumption
+    - Includes data preprocessing, model training, evaluation, and prediction functions. 
 - `plots/`: Contains generated plots from the analysis
-- `notebooks/`: Contains Jupyter notebooks for interactive analysis and visualization
 
 
 
