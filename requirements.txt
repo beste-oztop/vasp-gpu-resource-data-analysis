@@ -1,15 +1,17 @@
-# Core libraries
-numpy==1.26.3
-pandas==2.1.4
-scipy==1.11.4
+# Data science / numerical
+numpy==1.19.5
+pandas==1.1.5
 
-# Visualization libraries
-matplotlib==3.8.2
-seaborn==0.13.1
+# Machine learning/modeling
+scikit-learn==0.24.2
+lightgbm==4.3.0
+xgboost==1.5.2
 
-# Machine learning libraries
-scikit-learn==1.7.1
+# Deep learning
+tensorflow==2.5.0
 
-# Jupyter Notebook integration
-notebook
-ipykernel
+# Experiment tracking
+wandb==0.12.21
+
+# Utilities
+tqdm==4.64.1
