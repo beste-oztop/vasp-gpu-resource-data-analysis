@@ -76,22 +76,21 @@ The repository is organized into the following directories:
 ## Reproducibility // Software Requirements
 For the reader's reference, the analysis and prediction workflows in this repository require the Python libraries and software included in `requirements.txt`. The best practice is to create a virtual environment and load dependencies, simply as follows:
 
-# Create a virtual environment (Python 3.6.15 used in our experiments)
+* Create a virtual environment (Python 3.6.15 used in our experiments)
 ```bash
 python3 -m venv venv
 ```
-
-# Activate the environment
+* Activate the environment
 ```bash
 source venv/bin/activate
 ```
 
-# Upgrade pip
+* Upgrade pip
 ```bash
 pip install --upgrade pip
 ```
 
-# Install required packages
+* sInstall required packages
 ```bash
 pip install -r requirements.txt
 ```
