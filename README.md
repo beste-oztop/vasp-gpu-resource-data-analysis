@@ -1,8 +1,7 @@
 # Resource Utilization Analysis and Prediction of VASP GPU Jobs Running on Perlmutter
 This repository contains code and notebooks for analyzing and predicting GPU resource utilization on the Perlmutter supercomputer. The analyses focus primarily on VASP (Vienna Ab initio Simulation Package) jobs, along with data from several additional GPU applications collected in March 2025.
 
-**Author & Maintainer:** Beste Oztop
-**Affiliation:** Boston University  
+**Author & Maintainer:** Beste Oztop, Boston University  
 **Contact:** boztop@bu.edu
 
 ## Overview
@@ -60,7 +59,7 @@ Due to data access restrictions and user privacy considerations, the raw dataset
 | E3SM  | 267  | 8945 | 2257
 
 
-## Organization
+## Repository Organization
 The repository is organized into the following directories:
 - `notebooks/`: Contains the following Jupyter notebooks:
   - `resource_util_analysis.ipynb`
@@ -74,4 +73,26 @@ The repository is organized into the following directories:
 - `scripts/`: Contains the Python script for preparing the multivariate time series data for model training and the script for **during job execution** power prediction using real-time GPU utilization metrics.
 
 
+## Reproducibility // Software Requirements
+For the reader's reference, the analysis and prediction workflows in this repository require the Python libraries and software included in `requirements.txt`. The best practice is to create a virtual environment and load dependencies, simply as follows:
+
+# Create a virtual environment (Python 3.6.15 used in our experiments)
+```bash
+python3 -m venv venv
+```
+
+# Activate the environment
+```bash
+source venv/bin/activate
+```
+
+# Upgrade pip
+```bash
+pip install --upgrade pip
+```
+
+# Install required packages
+```bash
+pip install -r requirements.txt
+```
 
