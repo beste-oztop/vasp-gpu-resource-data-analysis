@@ -4,6 +4,8 @@ This repository contains code and notebooks for analyzing and predicting GPU res
 **Author & Maintainer:** Beste Oztop, Boston University  
 **Contact:** boztop@bu.edu
 
+This research was supported by the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility operated under Contract No. DE-AC02-05CH11231.
+
 ## Overview
 This repository contains scripts and analysis workflows for characterizing and predicting GPU resource utilization and average power consumption of GPU jobs on NERSC’s Perlmutter system. The analyses are based on two system-level data sources: (1) Slurm accounting logs and (2) NVIDIA DCGM GPU monitoring metrics.
 
@@ -73,7 +75,7 @@ The repository is organized into the following directories:
 - `scripts/`: Contains the Python script for preparing the multivariate time series data for model training and the script for **during job execution** power prediction using real-time GPU utilization metrics.
 
 
-## Reproducibility // Software Requirements
+## Reproducibility: Software Requirements
 For the reader's reference, the analysis and prediction workflows in this repository require the Python libraries and software included in `requirements.txt`. The best practice is to create a virtual environment and load dependencies, simply as follows:
 
 * Create a virtual environment (Python 3.6.15 used in our experiments)
